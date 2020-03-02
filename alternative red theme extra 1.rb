@@ -114,13 +114,9 @@ with_fx :reverb do
   play :Eb4
   play :B3
   sleep 1
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   play :Bb4
   play :Eb4
@@ -128,173 +124,117 @@ with_fx :reverb do
   sleep 1
   sample pikachu, amp: 2
   sleep 1.5
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   play :B4
   play :Eb4
   play :B3
   sleep 1
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   play :Bb4
   play :Eb4
   play :Bb3
   sleep 1
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   play :D4
   play :B3
   play :D3
   sleep 1
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   play :Bb4
   play :Eb4
   play :Bb3
   sleep 1
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   play :B4
   play :Eb4
   play :B3
   sleep 1
   sample take_out, amp: 2.5
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   play :Bb4
   play :Eb4
   play :Bb3
   sleep 1
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   sample vaporeon, amp: 2
   sleep 3.736
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   play :F4
   play :Eb4
   play :Ab3
   sleep 1
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   play :Bb4
   play :Eb4
   play :Bb3
   sleep 1
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   play :B4
   play :Eb4
   play :B3
   sleep 1
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   play :Bb4
   play :Eb4
   play :Bb3
   sleep 1
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   sample ok, amp: 2
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   play :D4
   play :B3
   play :D3
   sleep 1
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   play :Bb4
   play :Eb4
   play :Bb3
   sleep 1
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   play :B4
   play :Eb4
   play :Bb3
   sleep 1
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
-  play :Eb4
-  play :Bb3
-  play :Eb3
+  start
   sleep 0.5
   play :C5
   play :Gb4
@@ -1062,71 +1002,72 @@ with_fx :reverb do
       play :B3
       sleep 0.5
       play :Db5
-    play :D4
-    sleep 0.5
-    play :E4
-    sleep 0.5
-    play :E5
-    play :E4
-    play :Eb3
-    sleep 0.5
-    play :EB4
-    play :EB4
-    play :B3
-    sleep 0.5
-    play :Bb4
-    play :D4
-    sleep 0.5
-    play :E4
-    sleep 0.5
-    play :Eb5
-    play :E4
-    play :Eb3
-    sleep 0.5
-    play :E4
-    play :B3
-    sleep 0.5
-    play :Bb4
-    play :D4
-    sleep 0.5
-    play :E4
-    sleep 0.5
-    play :E5
-    play :E4
-    play :Eb3
-    sleep 0.5
-    play :EB4
-    play :B3
-    sleep 0.5
-    play :Bb4
-    play :D4
-    sleep 0.5
-    play :E4
-    sleep 0.5
-    play :G5
-    play :E4
-    play :Eb3
-    sleep 0.5
-    play :E4
-    sleep 0.5
-    play :D4
-    play :Db5
-    sleep 0.5
-    play :E4
-    sleep 0.5
-    play :A5
-    play :E4
-    play :D4
-    sleep 0.5
-    play :E4
-    play :B3
-    sleep 0.5
-    play :D5
-    play :Bb3
-    sleep 0.5
-    play :A3
-    sleep 0.5
-    d = d + 1
-    e = e +1
+      play :D4
+      sleep 0.5
+      play :E4
+      sleep 0.5
+      play :E5
+      play :E4
+      play :Eb3
+      sleep 0.5
+      play :EB4
+      play :EB4
+      play :B3
+      sleep 0.5
+      play :Bb4
+      play :D4
+      sleep 0.5
+      play :E4
+      sleep 0.5
+      play :Eb5
+      play :E4
+      play :Eb3
+      sleep 0.5
+      play :E4
+      play :B3
+      sleep 0.5
+      play :Bb4
+      play :D4
+      sleep 0.5
+      play :E4
+      sleep 0.5
+      play :E5
+      play :E4
+      play :Eb3
+      sleep 0.5
+      play :EB4
+      play :B3
+      sleep 0.5
+      play :Bb4
+      play :D4
+      sleep 0.5
+      play :E4
+      sleep 0.5
+      play :G5
+      play :E4
+      play :Eb3
+      sleep 0.5
+      play :E4
+      sleep 0.5
+      play :D4
+      play :Db5
+      sleep 0.5
+      play :E4
+      sleep 0.5
+      play :A5
+      play :E4
+      play :D4
+      sleep 0.5
+      play :E4
+      play :B3
+      sleep 0.5
+      play :D5
+      play :Bb3
+      sleep 0.5
+      play :A3
+      sleep 0.5
+      d = d + 1
+      e = e +1
+    end
   end
 end
