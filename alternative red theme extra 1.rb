@@ -22,6 +22,12 @@ define :start do
   play :Eb4
   play :Bb3
   play :Eb3
+  sleep 1
+end
+define :extra do |n1, n2, n3|
+  play n1
+  play n2
+  play n3
 end
 use_bpm 195
 with_fx :reverb do
@@ -1067,7 +1073,10 @@ with_fx :reverb do
       play :A3
       sleep 0.5
       d = d + 1
-      e = e +1
+      e = e + 1
+      f = f + 1
+      g = g + 1
+      h = h + 1
     end
   end
 end
