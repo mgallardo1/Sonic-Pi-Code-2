@@ -22,12 +22,12 @@ define :start do
   play :Eb4
   play :Bb3
   play :Eb3
-  sleep 1
 end
 define :extra do |n1, n2, n3|
   play n1
   play n2
   play n3
+  sleep 1
 end
 use_bpm 195
 with_fx :reverb do
@@ -52,10 +52,7 @@ with_fx :reverb do
   sleep 2
   start
   sleep 1
-  play :D4
-  play :B3
-  play :E3
-  sleep 1
+  extra :D4, :B3, :E3
   start
   sleep 0.5
   start
@@ -72,10 +69,7 @@ with_fx :reverb do
   sleep 0.5
   start
   sleep 0.5
-  play :B4
-  play :Eb4
-  play :Bb3
-  sleep 1
+  extra :B4, :Eb4, :Bb3
   start
   sleep 0.5
   start
@@ -93,10 +87,7 @@ with_fx :reverb do
   sleep 0.5
   start
   sleep 0.5
-  play :B4
-  play :Eb4
-  play :B3
-  sleep 1
+  extra :B4, :Eb4, :B3
   sample ok, amp: 2
   start
   sleep 0.5
@@ -116,154 +107,100 @@ with_fx :reverb do
   start
   sleep 0.5
   sample take_out, amp: 2.5
-  play :Db5
-  play :Eb4
-  play :B3
-  sleep 1
+  extra :Db5, :Eb4, :B3
   start
   sleep 0.5
   start
   sleep 0.5
-  play :Bb4
-  play :Eb4
-  play :Bb3
-  sleep 1
+  extra :Bb4, :Eb4, :Bb3
   sample pikachu, amp: 2
   sleep 1.5
   start
   sleep 0.5
   start
   sleep 0.5
-  play :B4
-  play :Eb4
-  play :B3
-  sleep 1
+  extra :B4, :Eb4, :B3
   start
   sleep 0.5
   start
   sleep 0.5
-  play :Bb4
-  play :Eb4
-  play :Bb3
-  sleep 1
+  extra :Bb4, :Eb4, :Bb3
   start
   sleep 0.5
   start
   sleep 0.5
-  play :D4
-  play :B3
-  play :D3
-  sleep 1
+  extra :D4, :B3, :D3
   start
   sleep 0.5
   start
   sleep 0.5
-  play :Bb4
-  play :Eb4
-  play :Bb3
-  sleep 1
+  extra :Bb4, :Eb4, :Bb3
   start
   sleep 0.5
   start
   sleep 0.5
-  play :B4
-  play :Eb4
-  play :B3
-  sleep 1
+  extra :B4, :Eb4, :B3
   sample take_out, amp: 2.5
   start
   sleep 0.5
   start
   sleep 0.5
-  play :Bb4
-  play :Eb4
-  play :Bb3
-  sleep 1
+  extra :Bb4, :Eb4, :Bb3
   start
   sleep 0.5
   sample vaporeon, amp: 2
   sleep 3.736
   start
   sleep 0.5
-  play :F4
-  play :Eb4
-  play :Ab3
-  sleep 1
+  extra :F4, :Eb4, :Ab3
   start
   sleep 0.5
   start
   sleep 0.5
-  play :Bb4
-  play :Eb4
-  play :Bb3
-  sleep 1
+  extra :Bb4, :Eb4, :Bb3
   start
   sleep 0.5
   start
   sleep 0.5
-  play :B4
-  play :Eb4
-  play :B3
-  sleep 1
+  extra :B4, :Eb4, :B3
   start
   sleep 0.5
   start
   sleep 0.5
-  play :Bb4
-  play :Eb4
-  play :Bb3
-  sleep 1
+  extra :Bb4, :Eb4, :Bb3
   start
   sleep 0.5
   sample ok, amp: 2
   start
   sleep 0.5
-  play :D4
-  play :B3
-  play :D3
-  sleep 1
+  extra :D4, :B3, :D3
   start
   sleep 0.5
   start
   sleep 0.5
-  play :Bb4
-  play :Eb4
-  play :Bb3
-  sleep 1
+  extra :Bb4, :Eb4, :Bb3
   start
   sleep 0.5
   start
   sleep 0.5
-  play :B4
-  play :Eb4
-  play :Bb3
-  sleep 1
+  extra :B4, :Eb4, :Bb3
   start
   sleep 0.5
   start
   sleep 0.5
-  play :C5
-  play :Gb4
-  play :B3
-  sleep 1
+  extra :C5, :Gb4, :B3
   start
   sleep 0.5
   start
   sleep 0.5
-  play :Db5
-  play :Gb4
-  play :Db4
-  sleep 1
+  extra :Db5, :Gb4, :Db4
   play :Eb5
   play :Bb4
   play :Eb4
   sleep 2
   start
   sleep 2
-  play :E5
-  play :B4
-  play :B3
-  sleep 1
+  extra :E5, :B4, :B3
   play :G3
   sleep 0.5
   play :B3
