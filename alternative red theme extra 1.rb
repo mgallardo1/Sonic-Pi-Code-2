@@ -28,13 +28,6 @@ define :extra do |n1, n2, n3|
   play n1
   play n2
   play n3
-  sleep 1
-end
-define :extra2 do |n1, n2, n3|
-  play n1
-  play n2
-  play n3
-  sleep 0.5
 end
 use_bpm 195
 with_fx :reverb do
@@ -230,43 +223,43 @@ with_fx :reverb do
   live_loop :repeat do
     8.times do
       index = 0
-      extra2 :Eb5, :Eb4, :Eb3
+      extra :Eb5, :Eb4, :Eb3
       play :Bb4
       play :B3
       sleep 0.5
       play :Eb4
       play :Eb3
       sleep 0.5
-      extra2 :Bb4, :Gb4, :B3
-      extra2 :Bb4, :Gb4, :Eb3
+      extra :Bb4, :Gb4, :B3
+      extra :Bb4, :Gb4, :Eb3
       if d == 0
         sample take_back, amp: 2.5
       end
       play :F4
       play :B3
       sleep 0.5
-      extra2 :Gb3, :G2, :E3
-      extra2 :F3, :D3, :B3
-      extra2 :Db5, :Gb4, :Eb3
+      extra :Gb3, :G2, :E3
+      extra :F3, :D3, :B3
+      extra :Db5, :Gb4, :Eb3
       play :Bb4
       play :B3
       sleep 0.5
-      extra2 :C5, :A2, :Eb3
+      extra :C5, :A2, :Eb3
       play :A4
       play :B3
       sleep 0.5
-      extra2 :B4, :E4, :Eb3
+      extra :B4, :E4, :Eb3
       play :Ab4
       play :B3
       sleep 0.5
-      extra2 :Bb4, :Eb4, :Eb3
+      extra :Bb4, :Eb4, :Eb3
       if d == 0
         sample take_out, amp: 2.5
       end
       play :G4
       play :B3
       sleep 0.5
-      extra2 :B4, :E4, :E3
+      extra :B4, :E4, :E3
       play :E4
       play :B3
       sleep 0.5
@@ -278,7 +271,7 @@ with_fx :reverb do
         sleep 0.5
         play :B3
         sleep 0.5
-        extra2 :E5, :E4, :Eb3
+        extra :E5, :E4, :Eb3
         play :E4
         play :B3
         sleep 0.5
@@ -287,12 +280,12 @@ with_fx :reverb do
         sleep 0.5
         play :B3
         sleep 0.5
-        extra2 :Ab4, :E4, :B3
-        extra2 :Ab4, :E4, :E3
-        extra2 :B4, :Ab4, :E3
+        extra :Ab4, :E4, :B3
+        extra :Ab4, :E4, :E3
+        extra :B4, :Ab4, :E3
         play :C4
         sleep 0.5
-        extra2 :Gs4, :E4, :A3
+        extra :Gs4, :E4, :A3
         play :Gs4
         play :E4
         play :B3
