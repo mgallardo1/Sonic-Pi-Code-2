@@ -11,6 +11,7 @@ typhlosion = "C:/Users/miguel_gallardo/Downloads/Typhlosion.wav"
 charm = "C:/Users/miguel_gallardo/Downloads/Charm.wav"
 earthquake = "C:/Users/miguel_gallardo/Downloads/Earthquake.wav"
 super_effecttive = "C:/Users/miguel_gallardo/Downloads/Super Effective.wav"
+faint = "C:/Users/miguel_gallardo/Downloads/Faint.wav"
 a = 0.60
 b = 0.61
 c = 2
@@ -53,6 +54,7 @@ with_fx :reverb do
   start
   sleep 1
   extra :D4, :B3, :E3
+  sleep 1
   start
   sleep 0.5
   start
@@ -70,6 +72,7 @@ with_fx :reverb do
   start
   sleep 0.5
   extra :B4, :Eb4, :Bb3
+  sleep 1
   start
   sleep 0.5
   start
@@ -88,6 +91,7 @@ with_fx :reverb do
   start
   sleep 0.5
   extra :B4, :Eb4, :B3
+  sleep 1
   sample ok, amp: 2
   start
   sleep 0.5
@@ -108,11 +112,13 @@ with_fx :reverb do
   sleep 0.5
   sample take_out, amp: 2.5
   extra :Db5, :Eb4, :B3
+  sleep 1
   start
   sleep 0.5
   start
   sleep 0.5
   extra :Bb4, :Eb4, :Bb3
+  sleep 1
   sample pikachu, amp: 2
   sleep 1.5
   start
@@ -120,32 +126,38 @@ with_fx :reverb do
   start
   sleep 0.5
   extra :B4, :Eb4, :B3
+  sleep 1
   start
   sleep 0.5
   start
   sleep 0.5
   extra :Bb4, :Eb4, :Bb3
+  sleep 1
   start
   sleep 0.5
   start
   sleep 0.5
   extra :D4, :B3, :D3
+  sleep 1
   start
   sleep 0.5
   start
   sleep 0.5
   extra :Bb4, :Eb4, :Bb3
+  sleep 1
   start
   sleep 0.5
   start
   sleep 0.5
   extra :B4, :Eb4, :B3
+  sleep 1
   sample take_out, amp: 2.5
   start
   sleep 0.5
   start
   sleep 0.5
   extra :Bb4, :Eb4, :Bb3
+  sleep 1
   start
   sleep 0.5
   sample vaporeon, amp: 2
@@ -153,54 +165,64 @@ with_fx :reverb do
   start
   sleep 0.5
   extra :F4, :Eb4, :Ab3
+  sleep 1
   start
   sleep 0.5
   start
   sleep 0.5
   extra :Bb4, :Eb4, :Bb3
+  sleep 1
   start
   sleep 0.5
   start
   sleep 0.5
   extra :B4, :Eb4, :B3
+  sleep 1
   start
   sleep 0.5
   start
   sleep 0.5
   extra :Bb4, :Eb4, :Bb3
+  sleep 1
   start
   sleep 0.5
   start
   sleep 0.5
   sample ok, amp: 2
   extra :D4, :B3, :D3
+  sleep 1
   start
   sleep 0.5
   start
   sleep 0.5
   extra :Bb4, :Eb4, :Bb3
+  sleep 1
   start
   sleep 0.5
   start
   sleep 0.5
   extra :B4, :Eb4, :Bb3
+  sleep 1
   start
   sleep 0.5
   start
   sleep 0.5
   extra :C5, :Gb4, :B3
+  sleep 1
   start
   sleep 0.5
   start
   sleep 0.5
   extra :Db5, :Gb4, :Db4
-  extra :Eb5, :Bb4, :Eb4
   sleep 1
+  extra :Eb5, :Bb4, :Eb4
+  sleep 2
   sample ok, amp: 2
   start
   sleep 2
   sample ok, amp: 2
   extra :E5, :B4, :B3
+  sleep 1
   play :G3
   sleep 0.5
   play :B3
@@ -224,6 +246,7 @@ with_fx :reverb do
     8.times do
       index = 0
       extra :Eb5, :Eb4, :Eb3
+      sleep 0.5
       play :Bb4
       play :B3
       sleep 0.5
@@ -231,7 +254,9 @@ with_fx :reverb do
       play :Eb3
       sleep 0.5
       extra :Bb4, :Gb4, :B3
+      sleep 0.5
       extra :Bb4, :Gb4, :Eb3
+      sleep 0.5
       if d == 0
         sample take_back, amp: 2.5
       end
@@ -239,20 +264,26 @@ with_fx :reverb do
       play :B3
       sleep 0.5
       extra :Gb3, :G2, :E3
+      sleep 0.5
       extra :F3, :D3, :B3
+      sleep 0.5
       extra :Db5, :Gb4, :Eb3
+      sleep 0.5
       play :Bb4
       play :B3
       sleep 0.5
       extra :C5, :A2, :Eb3
+      sleep 0.5
       play :A4
       play :B3
       sleep 0.5
       extra :B4, :E4, :Eb3
+      sleep 0.5
       play :Ab4
       play :B3
       sleep 0.5
       extra :Bb4, :Eb4, :Eb3
+      sleep 0.5
       if d == 0
         sample take_out, amp: 2.5
       end
@@ -260,441 +291,425 @@ with_fx :reverb do
       play :B3
       sleep 0.5
       extra :B4, :E4, :E3
+      sleep 0.5
       play :E4
       play :B3
       sleep 0.5
       if d == 0
         sample typhlosion, amp: 2
         sleep 4.16
-        play :Gb4
-        play :Eb3
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        extra :E5, :E4, :Eb3
-        play :E4
-        play :B3
-        sleep 0.5
-        play :Ab4
-        play :Eb3
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        extra :Ab4, :E4, :B3
-        extra :Ab4, :E4, :E3
-        extra :B4, :Ab4, :E3
-        play :C4
-        sleep 0.5
-        extra :Gs4, :E4, :A3
-        play :Gs4
-        play :E4
-        play :B3
-        sleep 0.5
-        play :Db5
-        play :B4
-        play :G3
-        sleep 0.5
-        play :A3
-        sleep 0.5
-        play :Eb5
-        play :Eb4
-        play :Eb3
-        if d == 0
+      end
+      play :Gb4
+      play :Eb3
+      sleep 0.5
+      play :B3
+      sleep 0.5
+      extra :E5, :E4, :Eb3
+      sleep 0.5
+      play :E4
+      play :B3
+      sleep 0.5
+      play :Ab4
+      play :Eb3
+      sleep 0.5
+      play :B3
+      sleep 0.5
+      extra :Ab4, :E4, :B3
+      sleep 0.5
+      extra :Ab4, :E4, :E3
+      sleep 0.5
+      extra :B4, :Ab4, :E3
+      sleep 0.5
+      play :C4
+      sleep 0.5
+      extra :Gs4, :E4, :A3
+      sleep 0.5
+      play :Gs4
+      play :E4
+      play :B3
+      sleep 0.5
+      play :Db5
+      play :B4
+      play :G3
+      sleep 0.5
+      play :A3
+      sleep 0.5
+      play :Eb5
+      play :Eb4
+      play :Eb3
+      sleep 0.5
+      if d == 0
+        sample charm, amp: 2
+      end
+      play :Bb4
+      play :B3
+      sleep 0.5
+      play :Eb4
+      play :Eb3
+      sleep 0.5
+      play :Bb4
+      play :Gb4
+      play :B3
+      sleep 0.5
+      play :Bb4
+      play :Gb4
+      play :Eb3
+      sleep 0.5
+      play :F4
+      play :B3
+      sleep 0.5
+      play :Gb3
+      play :G2
+      play :E3
+      sleep 0.5
+      play :F3
+      play :D3
+      play :B3
+      sleep 0.5
+      play :Db5
+      play :Gb4
+      play :Eb3
+      sleep 0.5
+      play :Bb4
+      play :B3
+      sleep 0.5
+      play :C5
+      play :A2
+      play :Eb3
+      sleep 0.5
+      play :A4
+      play :B3
+      sleep 0.5
+      extra :B4, :E4, :Eb3
+      sleep 0.5
+      play :Ab4
+      play :B3
+      sleep 0.5
+      extra :Bb4, :Eb4, :Eb3
+      sleep 0.5
+      extra :B4, :G4, :B3
+      sleep 0.5
+      extra :E5, :E4, :E3
+      sleep 0.5
+      play :E4
+      play :B3
+      sleep 0.5
+      play :Gb4
+      play :E3
+      sleep 0.5
+      play :B3
+      sleep 0.5
+      extra :A5, :E4, :E3
+      sleep 0.5
+      play :E4
+      play :B3
+      sleep 0.5
+      if d == 0
+        sample ok, amp: 2
+      end
+      play :Ab4
+      play :E3
+      sleep 0.5
+      play :B3
+      sleep 0.5
+      extra :E5, :E4, :E3
+      sleep 0.5
+      play :E4
+      play :B3
+      sleep 0.5
+      play :B4
+      play :E3
+      sleep 0.5
+      play :B3
+      sleep 0.5
+      extra :B5, :E4, :E3
+      sleep 0.5
+      play :E4
+      play :B3
+      sleep 0.5
+      if d == 0
+        sample ok, amp: 2
+      end
+      play :Eb5
+      play :E3
+      sleep 0.5
+      play :B3
+      sleep 0.5
+      play :Eb5
+      play :Bb4
+      play :Eb3
+      sleep 0.5
+      play :Eb5
+      play :Bb4
+      play :G3
+      sleep 0.5
+      play :Eb3
+      sleep 0.5
+      play :Eb5
+      play :Bb4
+      play :G3
+      sleep 0.5
+      play :Eb3
+      sleep 0.5
+      play :Eb5
+      play :Bb4
+      play :D4
+      sleep 0.5
+      play :Db4
+      sleep 0.5
+      play :Eb5
+      play :Bb4
+      play :C4
+      sleep 0.5
+      play :B3
+      play :Eb3
+      sleep 0.5
+      play :Eb5
+      play :Bb4
+      play :E3
+      sleep 0.5
+      if d == 0
+        sample ok, amp: 2
+      end
+      play :Eb3
+      sleep 0.5
+      play :Eb5
+      play :Bb4
+      play :E3
+      sleep 0.5
+      play :E5
+      play :B4
+      play :Eb3
+      sleep 1
+      play :D4
+      sleep 0.5
+      play :Eb5
+      play :Ab4
+      play :D4
+      sleep 0.5
+      play :C4
+      sleep 0.5
+      if d == 0
+        sample earthquake, amp: 3
+      end
+      play :Eb5
+      play :Bb4
+      play :B3
+      play :Eb3
+      sleep 0.5
+      play :Eb5
+      play :Bb4
+      play :G3
+      sleep 0.5
+      play :Eb3
+      sleep 0.5
+      play :Eb5
+      play :Bb4
+      play :G3
+      sleep 0.5
+      play :Eb3
+      sleep 0.5
+      play :Eb5
+      play :Bb4
+      play :D4
+      sleep 0.5
+      play :D4
+      sleep 0.5
+      play :Eb5
+      play :Bb4
+      play :C4
+      sleep 0.5
+      play :Eb3
+      sleep 0.5
+      play :Eb5
+      play :Bb4
+      play :B3
+      sleep 0.5
+      play :Eb3
+      sleep 0.5
+      play :Eb5
+      play :Bb4
+      play :B3
+      sleep 0.5
+      play :G5
+      play :D5
+      play :Eb3
+      sleep 0.5
+      play :D4
+      sleep 0.5
+      play :G5
+      play :D5
+      play :Db4
+      sleep 0.5
+      play :C4
+      sleep 0.5
+      play :Eb5
+      play :Bb4
+      play :B3
+      sleep 2
+      play :E4
+      play :B3
+      play :Eb3
+      sleep 2
+      if d == 0
+        sample super_effecttive, amp: 3
+      end
+      extra :Db5, :Gb4, :B3
+      sleep 2
+      extra :D4, :G3, :Eb3
+      sleep 2
+      24.times do
+        if index == 0
+          play :E4
+          play :B3
+          play :Eb3
           sleep 0.5
-          sample charm, amp: 2
-        else
+          play :G3
           sleep 0.5
         end
-        play :Bb4
-        play :B3
-        sleep 0.5
-        play :Eb4
-        play :Eb3
-        sleep 0.5
-        play :Bb4
-        play :Gb4
-        play :B3
-        sleep 0.5
-        play :Bb4
-        play :Gb4
-        play :Eb3
-        sleep 0.5
-        play :F4
-        play :B3
-        sleep 0.5
-        play :Gb3
-        play :G2
-        play :E3
-        sleep 0.5
-        play :F3
-        play :D3
-        play :B3
-        sleep 0.5
-        play :Db5
-        play :Gb4
-        play :Eb3
-        sleep 0.5
-        play :Bb4
-        play :B3
-        sleep 0.5
-        play :C5
-        play :A2
-        play :Eb3
-        sleep 0.5
-        play :A4
-        play :B3
-        sleep 0.5
-        play :B4
-        play :E4
-        play :Eb3
-        sleep 0.5
-        play :Ab4
-        play :B3
-        sleep 0.5
-        play :Bb4
-        play :Eb4
-        play :Eb3
-        sleep 0.5
-        play :B4
-        play :G4
-        play :B3
-        sleep 0.5
-        play :E5
-        play :E4
-        play :E3
-        sleep 0.5
-        play :E4
-        play :B3
-        sleep 0.5
-        play :Gb4
-        play :E3
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        play :A5
-        play :E4
-        play :E3
-        sleep 0.5
-        play :E4
-        play :B3
-        if d == 0
+        if index == 6
+          play :E4
+          play :B3
+          play :Eb3
           sleep 0.5
-          sample ok, amp: 2
-        else
+          play :G3
           sleep 0.5
         end
-        play :Ab4
-        play :E3
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        play :E5
-        play :E4
-        play :E3
-        sleep 0.5
-        play :E4
-        play :B3
-        sleep 0.5
-        play :B4
-        play :E3
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        play :B5
-        play :E4
-        play :E3
-        sleep 0.5
-        play :E4
-        play :B3
-        if d == 0
+        if index == 12
+          play :F4
+          play :D4
+          play :Eb3
           sleep 0.5
-          sample ok, amp: 2
-        else
+          play :G3
           sleep 0.5
         end
-        play :Eb5
-        play :E3
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        play :Eb5
-        play :Bb4
-        play :Eb3
-        sleep 0.5
-        play :Eb5
-        play :Bb4
-        play :G3
-        sleep 0.5
-        play :Eb3
-        sleep 0.5
-        play :Eb5
-        play :Bb4
-        play :G3
-        sleep 0.5
-        play :Eb3
-        sleep 0.5
-        play :Eb5
-        play :Bb4
-        play :D4
-        sleep 0.5
-        play :Db4
-        sleep 0.5
-        play :Eb5
-        play :Bb4
-        play :C4
-        sleep 0.5
-        play :B3
-        play :Eb3
-        sleep 0.5
-        play :Eb5
-        play :Bb4
-        play :E3
-        if d == 0
+        if index == 18
+          play :Gb4
+          play :E4
+          play :Eb3
           sleep 0.5
-          sample ok, amp: 2
-        else
+          play :G3
           sleep 0.5
         end
-        play :Eb3
+        play repeat [index]
         sleep 0.5
-        play :Eb5
-        play :Bb4
-        play :E3
-        sleep 0.5
-        play :E5
-        play :B4
-        play :Eb3
-        sleep 1
-        play :D4
-        sleep 0.5
-        play :Eb5
-        play :Ab4
-        play :D4
-        sleep 0.5
-        play :C4
-        if d == 0
-          sleep 0.5
-          sample earthquake, amp: 3
-        else
-          sleep 0.5
-        end
-        play :Eb5
-        play :Bb4
-        play :B3
-        play :Eb3
-        sleep 0.5
-        play :Eb5
-        play :Bb4
-        play :G3
-        sleep 0.5
-        play :Eb3
-        sleep 0.5
-        play :Eb5
-        play :Bb4
-        play :G3
-        sleep 0.5
-        play :Eb3
-        sleep 0.5
-        play :Eb5
-        play :Bb4
-        play :D4
-        sleep 0.5
-        play :D4
-        sleep 0.5
-        play :Eb5
-        play :Bb4
-        play :C4
-        sleep 0.5
-        play :Eb3
-        sleep 0.5
-        play :Eb5
-        play :Bb4
-        play :B3
-        sleep 0.5
-        play :Eb3
-        sleep 0.5
-        play :Eb5
-        play :Bb4
-        play :B3
-        sleep 0.5
-        play :G5
-        play :D5
-        play :Eb3
-        sleep 0.5
-        play :D4
-        sleep 0.5
-        play :G5
-        play :D5
-        play :Db4
-        sleep 0.5
-        play :C4
-        sleep 0.5
-        play :Eb5
-        play :Bb4
-        play :B3
-        sleep 2
-        play :E4
-        play :B3
-        play :Eb3
-        if d == 0
-          sleep 2
-          sample super_effecttive, amp: 3
-        else
-          sleep 2
-        end
-        play :Db5
-        play :Gb4
-        play :B3
-        sleep 2
-        play :D4
-        play :G3
-        play :Eb3
-        sleep 2
-        24.times do
-          if index == 0
-            play :E4
-            play :B3
-            play :Eb3
-            sleep 0.5
-            play :G3
-            sleep 0.5
-          end
-          if index == 6
-            play :E4
-            play :B3
-            play :Eb3
-            sleep 0.5
-            play :G3
-            sleep 0.5
-          end
-          if index == 12
-            play :F4
-            play :D4
-            play :Eb3
-            sleep 0.5
-            play :G3
-            sleep 0.5
-          end
-          if index == 18
-            play :Gb4
-            play :E4
-            play :Eb3
-            sleep 0.5
-            play :G3
-            sleep 0.5
-          end
-          play repeat [index]
-          sleep 0.5
-          index = index + 1
-        end
-        play :E6
-        play :G5
-        play :E3
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        play :D6
-        play :F5
-        play :E3
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        play :Db6
-        play :E5
-        play :E3
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        play :C6
-        play :Eb4
-        play :E3
-        sleep 0.5
-        play :E4
-        sleep 0.5
-        play :Eb6
-        play :D5
-        play :E3
-        sleep 0.5
-        play :D6
-        play :B3
-        sleep 0.5
-        play :Db6
-        play :Db5
-        play :Eb4
-        sleep 0.5
-        play :C6
-        play :E4
-        sleep 0.5
-        play :B5
-        play :G5
-        play :G4
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        play :B5
-        play :G5
-        play :Eb5
-        sleep 0.5
-        play :E4
-        sleep 0.5
-        play :E6
-        play :G5
-        play :E3
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        play :D6
-        play :F5
-        play :E3
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        play :Db6
-        play :E5
-        play :E3
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        play :C6
-        play :Eb4
-        play :E3
-        sleep 0.5
-        play :E4
-        sleep 0.5
-        play :Fb6
-        play :G5
-        play :E3
-        sleep 0.5
-        play :E6
-        play :A5
-        play :B3
-        sleep 0.5
-        play :Eb6
-        play :Eb5
-        play :E3
-        sleep 0.5
-        play :D6
-        play :E5
-        play :B3
-        sleep 0.5
-        play :C6
-        play :A3
-        play :E3
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        play :C6
-        play :A3
-        play :E3
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        play :Eb4
-        play :Eb3
-        sleep 0.5
-        play :G3
-        sleep 0.5
-        3.times do
+        index = index + 1
+      end
+      play :E6
+      play :G5
+      play :E3
+      sleep 0.5
+      play :B3
+      sleep 0.5
+      play :D6
+      play :F5
+      play :E3
+      sleep 0.5
+      play :B3
+      sleep 0.5
+      play :Db6
+      play :E5
+      play :E3
+      sleep 0.5
+      play :B3
+      sleep 0.5
+      play :C6
+      play :Eb4
+      play :E3
+      sleep 0.5
+      play :E4
+      sleep 0.5
+      play :Eb6
+      play :D5
+      play :E3
+      sleep 0.5
+      play :D6
+      play :B3
+      sleep 0.5
+      play :Db6
+      play :Db5
+      play :Eb4
+      sleep 0.5
+      play :C6
+      play :E4
+      sleep 0.5
+      play :B5
+      play :G5
+      play :G4
+      sleep 0.5
+      play :B3
+      sleep 0.5
+      play :B5
+      play :G5
+      play :Eb5
+      sleep 0.5
+      play :E4
+      sleep 0.5
+      if d == 0
+        sample ok, amp: 2
+      end
+      play :E6
+      play :G5
+      play :E3
+      sleep 0.5
+      play :B3
+      sleep 0.5
+      play :D6
+      play :F5
+      play :E3
+      sleep 0.5
+      if d == 0
+        sample faint, amp: 2.5
+      end
+      play :B3
+      sleep 0.5
+      play :Db6
+      play :E5
+      play :E3
+      sleep 0.5
+      play :B3
+      sleep 0.5
+      play :C6
+      play :Eb4
+      play :E3
+      sleep 0.5
+      play :E4
+      sleep 0.5
+      play :Fb6
+      play :G5
+      play :E3
+      sleep 0.5
+      play :E6
+      play :A5
+      play :B3
+      sleep 0.5
+      play :Eb6
+      play :Eb5
+      play :E3
+      sleep 0.5
+      play :D6
+      play :E5
+      play :B3
+      sleep 0.5
+      play :C6
+      play :A3
+      play :E3
+      sleep 0.5
+      play :B3
+      sleep 0.5
+      play :C6
+      play :A3
+      play :E3
+      sleep 0.5
+      play :B3
+      sleep 0.5
+      play :Eb4
+      play :Eb3
+      sleep 0.5
+      play :G3
+      sleep 0.5
+      d = d + 1
+      3.times do
           index = 2
           print index
           play trainer_red_notes [index]
