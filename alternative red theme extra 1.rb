@@ -12,10 +12,12 @@ charm = "C:/Users/miguel_gallardo/Downloads/Charm.wav"
 earthquake = "C:/Users/miguel_gallardo/Downloads/Earthquake.wav"
 super_effecttive = "C:/Users/miguel_gallardo/Downloads/Super Effective.wav"
 faint = "C:/Users/miguel_gallardo/Downloads/Faint.wav"
+espeon = "C:/Users/miguel_gallardo/Downloads/Espeon.wav"
 a = 0.60
 b = 0.61
 c = 2
 d = 0
+z = 0
 repeat = [:Eb3, :G3, :Eb3, :G3, :Eb3, :G3, :Eb3, :G3, :Eb3, :G3, :Eb3, :G3, :Eb3, :G3, :Eb3, :G3, :Eb3, :G3, :Eb3, :G3, :Eb3, :G3, :Eb3, :G3, :Eb3, :G3, :Eb3, :G3, :Eb3, :G3, :Eb3, :G3]
 index = 0
 trainer_red_notes = [:Eb3, :Bb3, :E3, :B3]
@@ -265,6 +267,9 @@ with_fx :reverb do
       sleep 0.5
       extra :Gb3, :G2, :E3
       sleep 0.5
+      if d == 1
+        sample take_out, amp: 2.5
+      end
       extra :F3, :D3, :B3
       sleep 0.5
       extra :Db5, :Gb4, :Eb3
@@ -274,6 +279,10 @@ with_fx :reverb do
       sleep 0.5
       extra :C5, :A2, :Eb3
       sleep 0.5
+      if d == 1
+        sample espeon, amp: 2.5
+        sleep 3.48
+      end
       play :A4
       play :B3
       sleep 0.5
@@ -285,7 +294,8 @@ with_fx :reverb do
       extra :Bb4, :Eb4, :Eb3
       sleep 0.5
       if d == 0
-        sample take_out, amp: 2.5
+        sample typhlosion, amp: 2.5
+        sleep 4.16
       end
       play :G4
       play :B3
@@ -324,13 +334,9 @@ with_fx :reverb do
       sleep 0.5
       extra :Gs4, :E4, :A3
       sleep 0.5
-      play :Gs4
-      play :E4
-      play :B3
+      extra :Gs4, :E4, :B3
       sleep 0.5
-      play :Db5
-      play :B4
-      play :G3
+      extra :Db5, :B4, :G3
       sleep 0.5
       play :A3
       sleep 0.5
@@ -435,57 +441,39 @@ with_fx :reverb do
       sleep 0.5
       play :B3
       sleep 0.5
-      play :Eb5
-      play :Bb4
-      play :Eb3
+      extra :Eb5, :Bb4, :Eb3
       sleep 0.5
-      play :Eb5
-      play :Bb4
-      play :G3
+      extra :Eb5, :Bb4, :G3
       sleep 0.5
       play :Eb3
       sleep 0.5
-      play :Eb5
-      play :Bb4
-      play :G3
+      extra :Eb5, :Bb4, :G3
       sleep 0.5
       play :Eb3
       sleep 0.5
-      play :Eb5
-      play :Bb4
-      play :D4
+      extra :Eb5, :Bb4, :D4
       sleep 0.5
       play :Db4
       sleep 0.5
-      play :Eb5
-      play :Bb4
-      play :C4
+      extra :Eb5, :Bb4, :C4
       sleep 0.5
       play :B3
       play :Eb3
       sleep 0.5
-      play :Eb5
-      play :Bb4
-      play :E3
+      extra :Eb5, :Bb4, :E3
       sleep 0.5
       if d == 0
         sample ok, amp: 2
       end
       play :Eb3
       sleep 0.5
-      play :Eb5
-      play :Bb4
-      play :E3
+      extra :Eb5, :Bb4, :E3
       sleep 0.5
-      play :E5
-      play :B4
-      play :Eb3
+      extra :E5, :B4, :Eb3
       sleep 1
       play :D4
       sleep 0.5
-      play :Eb5
-      play :Ab4
-      play :D4
+      extra :Eb5, :Ab4, :D4
       sleep 0.5
       play :C4
       sleep 0.5
@@ -639,15 +627,18 @@ with_fx :reverb do
       sleep 0.5
       play :B3
       sleep 0.5
+      if d == 0
+        sample ok, amp: 2
+      end
       play :B5
       play :G5
       play :Eb5
       sleep 0.5
+      if d == 0
+        sample faint, amp: 2.5
+      end
       play :E4
       sleep 0.5
-      if d == 0
-        sample ok, amp: 2
-      end
       play :E6
       play :G5
       play :E3
@@ -658,9 +649,6 @@ with_fx :reverb do
       play :F5
       play :E3
       sleep 0.5
-      if d == 0
-        sample faint, amp: 2.5
-      end
       play :B3
       sleep 0.5
       play :Db6
@@ -669,6 +657,9 @@ with_fx :reverb do
       sleep 0.5
       play :B3
       sleep 0.5
+      if d == 0
+        sample ok, amp: 2
+      end
       play :C6
       play :Eb4
       play :E3
@@ -691,6 +682,9 @@ with_fx :reverb do
       play :E5
       play :B3
       sleep 0.5
+      if d == 0
+        sample ok, amp: 2
+      end
       play :C6
       play :A3
       play :E3
@@ -708,40 +702,39 @@ with_fx :reverb do
       sleep 0.5
       play :G3
       sleep 0.5
-      d = d + 1
       3.times do
-          index = 2
-          print index
-          play trainer_red_notes [index]
-          sleep 0.5
-          index = index + 1
-          play trainer_red_notes [index]
-          sleep 0.5
-          print index
+        index = 2
+        print index
+        play trainer_red_notes [index]
+        sleep 0.5
+        index = index + 1
+        play trainer_red_notes [index]
+        sleep 0.5
+        print index
+        z = z + 1
+        if z == 2
+          sample ok, amp: 2
         end
-        play :B4
-        play :Gb4
-        play :Eb3
-        sleep 0.5
-        play :Bb3
-        sleep 0.5
-        play :B3
-        sleep 0.5
-        play :E4
-        sleep 0.5
-        play :E4
-        play :Eb3
-        sleep 0.5
-        play :E4
-        play :Eb3
-        sleep 0.5
-        play :Bb4
-        play :Eb4
-        play :Eb3
-        sleep 0.5
-        play :G3
-        sleep 0.5
-        3.times do
+      end
+      extra :B4, :Gb4, :Eb3
+      sleep 0.5
+      play :Bb3
+      sleep 0.5
+      play :B3
+      sleep 0.5
+      play :E4
+      sleep 0.5
+      play :E4
+      play :Eb3
+      sleep 0.5
+      play :E4
+      play :Eb3
+      sleep 0.5
+      extra :Bb4, :Eb4, :Eb3
+      sleep 0.5
+      play :G3
+      sleep 0.5
+      3.times do
         index = 0
         print index
         play trainer_red_notes [index]
@@ -751,9 +744,7 @@ with_fx :reverb do
         sleep 0.5
         print index
       end
-      play :Ab4
-      play :D4
-      play :Eb3
+      extra :Ab4, :D4, :Eb3
       sleep 0.5
       play :G3
       sleep 0.5
@@ -765,17 +756,11 @@ with_fx :reverb do
       sleep 0.5
       play :E3
       sleep 0.5
-      play :Eb4
-      play :Bb3
-      play :Eb3
+      extra :Eb4, :Bb3, :Eb3
       sleep 0.5
-      play :Eb4
-      play :Bb3
-      play :Ab3
+      extra :Eb4, :Bb3, :Ab3
       sleep 0.5
-      play :Bb4
-      play :Eb4
-      play :Eb3
+      extra :Bb4, :Eb4, :Eb3
       sleep 0.5
       play :Ab3
       sleep 0.5
@@ -791,6 +776,9 @@ with_fx :reverb do
       play :Eb4
       play :Eb3
       sleep 0.5
+      if d == 0
+        sample ok, amp: 2
+      end
       play :Ab3
       sleep 0.5
       play :Eb4
@@ -805,6 +793,9 @@ with_fx :reverb do
       play :Eb4
       play :Eb3
       sleep 0.5
+      if d == 0
+        sample ok, amp: 2
+      end
       play :Ab3
       sleep 0.5
       play :Eb4
@@ -843,43 +834,30 @@ with_fx :reverb do
       play :Bb3
       play :Ab3
       sleep 0.5
-      play :B4
-      play :Eb4
-      play :Eb3
+      extra :B4, :Eb4, :Eb3
       sleep 0.5
       play :Ab3
       sleep 0.5
-      play :Eb4
-      play :C4
-      play :Eb3
+      extra :Eb4, :C4, :Eb3
       sleep 0.5
-      play :Eb4
-      play :C4
-      play :Bb3
+      extra :Eb4, :C4, :Bb3
       sleep 0.5
-      play :Db5
-      play :Bb4
-      play :Eb3
+      if d == 0
+        sample ok, amp: 2
+      end
+      extra :Db5, :Bb4, :Eb3
       sleep 0.5
       play :Bb3
       sleep 0.5
-      play :Eb4
-      play :C4
-      play :Eb3
+      extra :Eb4, :C4, :Eb3
       sleep 0.5
-      play :Eb4
-      play :C4
-      play :Bb3
+      extra :Eb4, :C4, :Bb3
       sleep 0.5
-      play :D5
-      play :Ab4
-      play :B3
+      extra :D5, :Ab4, :B3
       sleep 0.5
       play :Bb3
       sleep 0.5
-      play :Eb5
-      play :E4
-      play :Eb3
+      extra :Eb5, :E4, :Eb3
       sleep 0.5
       play :E4
       play :B3
@@ -889,9 +867,7 @@ with_fx :reverb do
       sleep 0.5
       play :E4
       sleep 0.5
-      play :E5
-      play :E4
-      play :Eb3
+      extra :E5, :E4, :Eb3
       sleep 0.5
       play :EB4
       play :B3
@@ -901,9 +877,7 @@ with_fx :reverb do
       sleep 0.5
       play :E4
       sleep 0.5
-      play :G5
-      play :E4
-      play :Eb3
+      extra :G5, :E4, :Eb3
       sleep 0.5
       play :E4
       play :B3
@@ -913,12 +887,18 @@ with_fx :reverb do
       sleep 0.5
       play :E4
       sleep 0.5
-      play :E5
-      play :E4
-      play :Eb3
+      extra :E5, :E4, :Eb3
       sleep 0.5
-      play :EB4
-      play :EB4
+      extra :EB4, :EB4, :B3
+      sleep 0.5
+      play :Bb4
+      play :D4
+      sleep 0.5
+      play :E4
+      sleep 0.5
+      extra :Eb5, :E4, :Eb3
+      sleep 0.5
+      play :E4
       play :B3
       sleep 0.5
       play :Bb4
@@ -926,21 +906,7 @@ with_fx :reverb do
       sleep 0.5
       play :E4
       sleep 0.5
-      play :Eb5
-      play :E4
-      play :Eb3
-      sleep 0.5
-      play :E4
-      play :B3
-      sleep 0.5
-      play :Bb4
-      play :D4
-      sleep 0.5
-      play :E4
-      sleep 0.5
-      play :E5
-      play :E4
-      play :Eb3
+      extra :E5, :E4, :Eb3
       sleep 0.5
       play :EB4
       play :B3
@@ -950,9 +916,7 @@ with_fx :reverb do
       sleep 0.5
       play :E4
       sleep 0.5
-      play :G5
-      play :E4
-      play :Eb3
+      extra :G5, :E4, :Eb3
       sleep 0.5
       play :E4
       sleep 0.5
@@ -961,18 +925,20 @@ with_fx :reverb do
       sleep 0.5
       play :E4
       sleep 0.5
-      play :A5
-      play :E4
-      play :D4
+      extra :A5, :E4, :D4
       sleep 0.5
       play :E4
       play :B3
       sleep 0.5
+      if d == 0
+        sample ok, amp: 2
+      end
       play :D5
       play :Bb3
       sleep 0.5
       play :A3
       sleep 0.5
+      d = d + 1
     end
   end
 end
