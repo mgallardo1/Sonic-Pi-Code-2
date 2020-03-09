@@ -873,6 +873,8 @@ with_fx :reverb do
       d = d + 1
     end
     stop
+    sample choose([victory, victory2]), start: 0.0, finish: 0.07780612244
+    sleep 19.8431653478
   end
   sample wind, start: 0.0, finish: 0.24, amp: 1
   sleep 6.4182857143
