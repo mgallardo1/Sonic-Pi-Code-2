@@ -21,6 +21,7 @@ a = 0.60
 b = 0.61
 c = 2
 d = 0
+y = 0
 z = 0
 e = 0.24
 f = 0.25
@@ -470,8 +471,8 @@ with_fx :reverb do
         sample earthquake, amp: 3
       end
       play :Eb5
-      play:Bb4
-      play:B3
+      play :Bb4
+      play :B3
       play :Eb3
       sleep 0.5
       if d == 1
@@ -506,7 +507,7 @@ with_fx :reverb do
       extra :G5, :D5, :Eb3
       sleep 0.5
       if d == 1
-        sample effective, amp: 2
+        sample effective, amp: 4
       end
       play :D4
       sleep 0.5
@@ -553,6 +554,10 @@ with_fx :reverb do
         play repeat [index]
         sleep 0.5
         index = index + 1
+        y = y + 1
+        if y == 16
+          sample ok, amp: 2
+        end
       end
       extra :E6, :G5, :E3
       sleep 0.5
@@ -572,13 +577,11 @@ with_fx :reverb do
       sleep 0.5
       extra :Eb6, :D5, :E3
       sleep 0.5
-      play :D6
-      play :B3
+      extratwo :D6, :B3
       sleep 0.5
       extra :Db6, :Db5, :Eb4
       sleep 0.5
-      play :C6
-      play :E4
+      extratwo :C6, :E4
       sleep 0.5
       extra :B5, :G5, :G4
       sleep 0.5
@@ -632,8 +635,7 @@ with_fx :reverb do
       sleep 0.5
       play :B3
       sleep 0.5
-      play :Eb4
-      play :Eb3
+      extratwo :Eb4, :Eb3
       sleep 0.5
       play :G3
       sleep 0.5
@@ -659,11 +661,9 @@ with_fx :reverb do
       sleep 0.5
       play :E4
       sleep 0.5
-      play :E4
-      play :Eb3
+      extratwo :E4, :Eb3
       sleep 0.5
-      play :E4
-      play :Eb3
+      extratwo :E4, :Eb3
       sleep 0.5
       extra :Bb4, :Eb4, :Eb3
       sleep 0.5
@@ -766,31 +766,25 @@ with_fx :reverb do
       sleep 0.5
       extra :Eb5, :E4, :Eb3
       sleep 0.5
-      play :E4
-      play :B3
+      extratwo :E4, :B3
       sleep 0.5
-      play :Bb4
-      play :D4
+      extratwo :Bb4, :D4
       sleep 0.5
       play :E4
       sleep 0.5
       extra :E5, :E4, :Eb3
       sleep 0.5
-      play :EB4
-      play :B3
+      extratwo :EB4, :B3
       sleep 0.5
-      play :Bb4
-      play :D4
+      extratwo :Bb4, :D4
       sleep 0.5
       play :E4
       sleep 0.5
       extra :G5, :E4, :Eb3
       sleep 0.5
-      play :E4
-      play :B3
+      extratwo :E4, :B3
       sleep 0.5
-      play :Db5
-      play :D4
+      extratwo :Db5, :D4
       sleep 0.5
       play :E4
       sleep 0.5
@@ -798,28 +792,23 @@ with_fx :reverb do
       sleep 0.5
       extra :EB4, :EB4, :B3
       sleep 0.5
-      play :Bb4
-      play :D4
+      extratwo :Bb4, :D4
       sleep 0.5
       play :E4
       sleep 0.5
       extra :Eb5, :E4, :Eb3
       sleep 0.5
-      play :E4
-      play :B3
+      extratwo :E4, :B3
       sleep 0.5
-      play :Bb4
-      play :D4
+      extratwo :Bb4, :D4
       sleep 0.5
       play :E4
       sleep 0.5
       extra :E5, :E4, :Eb3
       sleep 0.5
-      play :EB4
-      play :B3
+      extratwo :EB4, :B3
       sleep 0.5
-      play :Bb4
-      play :D4
+      extratwo :Bb4, :D4
       sleep 0.5
       play :E4
       sleep 0.5
@@ -827,8 +816,7 @@ with_fx :reverb do
       sleep 0.5
       play :E4
       sleep 0.5
-      play :D4
-      play :Db5
+      extratwo :D4, :Db5
       sleep 0.5
       play :E4
       sleep 0.5
@@ -837,27 +825,25 @@ with_fx :reverb do
         sample ok, amp: 2
       end
       sleep 0.5
-      play :E4
-      play :B3
+      extratwo :E4, :B3
       sleep 0.5
-      play :D5
-      play :Bb3
+      extratwo :D5, :Bb3
       sleep 0.5
       play :A3
       sleep 0.5
       d = d + 1
     end
-    stop
     sample choose([victory, victory2]), start: 0.0, finish: 0.07780612244
     sleep 19.8431653478
-  end
-  sample wind, start: 0.0, finish: 0.24, amp: 1
-  sleep 6.4182857143
-  10.times do
-    sample wind, start: e, finish: f, amp: g
-    sleep 0.26742857142
-    e = e + 0.01
-    f = f + 0.01
-    g = g - 0.1
+    sample wind, start: 0.0, finish: 0.24, amp: 1
+    sleep 6.4182857143
+    10.times do
+      sample wind, start: e, finish: f, amp: g
+      sleep 0.26742857142
+      e = e + 0.01
+      f = f + 0.01
+      g = g - 0.2
+    end
+    stop
   end
 end
