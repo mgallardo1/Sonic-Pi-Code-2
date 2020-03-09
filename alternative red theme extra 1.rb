@@ -39,6 +39,10 @@ define :extra do |n1, n2, n3|
   play n2
   play n3
 end
+define :extratwo do |n1, n2|
+  play n1
+  play n2
+end
 use_bpm 195
 with_fx :reverb do
   use_synth :prophet
@@ -236,18 +240,15 @@ with_fx :reverb do
   sleep 0.5
   play :B3
   sleep 0.5
-  play :Eb5
-  play :Gb3
+  extratwo :Eb5, :Gb3
   sleep 0.5
   play :Bb3
   sleep 0.5
-  play :Bb4
-  play :F3
+  extratwo :Bb4, :F3
   sleep 0.25
   play :B4
   sleep 0.25
-  play :C5
-  play :A3
+  extratwo :C5, :A3
   sleep 0.25
   play :Db5
   sleep 0.25
@@ -256,14 +257,12 @@ with_fx :reverb do
       index = 0
       extra :Eb5, :Eb4, :Eb3
       sleep 0.5
-      play :Bb4
-      play :B3
+      extratwo :Bb4, :B3
       sleep 0.5
       if d == 1
         sample ok, amp: 2
       end
-      play :Eb4
-      play :Eb3
+      extratwo :Eb4, :Eb3
       sleep 0.5
       extra :Bb4, :Gb4, :B3
       sleep 0.5
@@ -272,8 +271,7 @@ with_fx :reverb do
       if d == 0
         sample take_back, amp: 2.5
       end
-      play :F4
-      play :B3
+      extratwo :F4, :B3
       sleep 0.5
       extra :Gb3, :G2, :E3
       sleep 0.5
@@ -284,8 +282,7 @@ with_fx :reverb do
       sleep 0.5
       extra :Db5, :Gb4, :Eb3
       sleep 0.5
-      play :Bb4
-      play :B3
+      extratwo :Bb4, :B3
       sleep 0.5
       extra :C5, :A2, :Eb3
       sleep 0.5
@@ -293,43 +290,36 @@ with_fx :reverb do
         sample espeon, amp: 2.5
         sleep 3.48
       end
-      play :A4
-      play :B3
+      extratwo :A4, :B3
       sleep 0.5
       extra :B4, :E4, :Eb3
       sleep 0.5
-      play :Ab4
-      play :B3
+      extratwo :Ab4, :B3
       sleep 0.5
       extra :Bb4, :Eb4, :Eb3
       sleep 0.5
       if d == 0
         sample take_out, amp: 2.5
       end
-      play :G4
-      play :B3
+      extratwo :G4, :B3
       sleep 0.5
       extra :B4, :E4, :E3
       sleep 0.5
-      play :E4
-      play :B3
+      extratwo :E4, :B3
       sleep 0.5
       if d == 0
         sample typhlosion, amp: 2
         sleep 4.16
       end
-      play :Gb4
-      play :Eb3
+      extratwo :Gb4, :Eb3
       sleep 0.5
       play :B3
       sleep 0.5
       extra :E5, :E4, :Eb3
       sleep 0.5
-      play :E4
-      play :B3
+      extratwo :E4, :B3
       sleep 0.5
-      play :Ab4
-      play :Eb3
+      extratwo :Ab4, :Eb3
       sleep 0.5
       play :B3
       sleep 0.5
@@ -357,18 +347,15 @@ with_fx :reverb do
       if d == 0
         sample charm, amp: 2
       end
-      play :Bb4
-      play :B3
+      extratwo :Bb4, :B3
       sleep 0.5
-      play :Eb4
-      play :Eb3
+      extratwo :Eb4, :Eb3
       sleep 0.5
       extra :Bb4, :Gb4, :B3
       sleep 0.5
       extra :Bb4, :Gb4, :Eb3
       sleep 0.5
-      play :F4
-      play :B3
+      extratwo :F4, :B3
       sleep 0.5
       extra :Gb3, :G2, :E3
       sleep 0.5
@@ -379,8 +366,7 @@ with_fx :reverb do
       sleep 0.5
       extra :Db5, :Gb4, :Eb3
       sleep 0.5
-      play :Bb4
-      play :B3
+      extratwo :Bb4, :B3
       sleep 0.5
       if d == 1
         sample vaporeon, amp: 2
@@ -388,13 +374,11 @@ with_fx :reverb do
       end
       extra :C5, :A2, :Eb3
       sleep 0.5
-      play :A4
-      play :B3
+      extratwo :A4, :B3
       sleep 0.5
       extra :B4, :E4, :Eb3
       sleep 0.5
-      play :Ab4
-      play :B3
+      extratwo :Ab4, :B3
       sleep 0.5
       extra :Bb4, :Eb4, :Eb3
       sleep 0.5
@@ -402,37 +386,31 @@ with_fx :reverb do
       sleep 0.5
       extra :E5, :E4, :E3
       sleep 0.5
-      play :E4
-      play :B3
+      extratwo :E4, :B3
       sleep 0.5
       if d == 1
         sample ok, amp: 2
       end
-      play :Gb4
-      play :E3
+      extratwo :Gb4, :E3
       sleep 0.5
       play :B3
       sleep 0.5
       extra :A5, :E4, :E3
       sleep 0.5
-      play :E4
-      play :B3
+      extratwo :E4, :B3
       sleep 0.5
       if d == 0
         sample ok, amp: 2
       end
-      play :Ab4
-      play :E3
+      extratwo :Ab4, :E3
       sleep 0.5
       play :B3
       sleep 0.5
       extra :E5, :E4, :E3
       sleep 0.5
-      play :E4
-      play :B3
+      extratwo :E4, :B3
       sleep 0.5
-      play :B4
-      play :E3
+      extratwo :B4, :E3
       sleep 0.5
       play :B3
       sleep 0.5
@@ -441,14 +419,12 @@ with_fx :reverb do
       end
       extra :B5, :E4, :E3
       sleep 0.5
-      play :E4
-      play :B3
+      extratwo :E4, :B3
       sleep 0.5
       if d == 0
         sample ok, amp: 2
       end
-      play :Eb5
-      play :E3
+      extratwo :Eb5, :E3
       sleep 0.5
       play :B3
       sleep 0.5
@@ -471,8 +447,7 @@ with_fx :reverb do
       sleep 0.5
       extra :Eb5, :Bb4, :C4
       sleep 0.5
-      play :B3
-      play :Eb3
+      extratwo :B3, :Eb3
       sleep 0.5
       extra :Eb5, :Bb4, :E3
       sleep 0.5
@@ -495,8 +470,8 @@ with_fx :reverb do
         sample earthquake, amp: 3
       end
       play :Eb5
-      play :Bb4
-      play :B3
+      play:Bb4
+      play:B3
       play :Eb3
       sleep 0.5
       if d == 1
